@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QUÉ LIBROS!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="index.html" title="QUE LIBROS!">
+                    <img src="img/logo.png" alt="QUE LIBROS!" width="10%">
+               </a>
+               <h1>QUÉ LIBROS!</h1>
+               <h3>Contando historias desde 2005</h3>
+            </section>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="busqueda.html">Búsqueda</a>
+                <a href="tiendas.html">Tiendas</a>
+                <a href="pedidos.html">Pedidos</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h5>Pedidos</h5>
+                <form method="POST" action="procesar.php">
+                    <section>
+                        <section>
+                            <article>
+                                <img src="img/libros/libro1.jpg" alt="libro1" width="10%">
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <label>Título</label>
+                                <span>FORTUNATA Y JACINTA</span>
+                            </article>
+                            <article>
+                                <label>Autor</label>
+                                <span>Benito Pérez Galdos</span>
+                            </article>
+                            <article>
+                                <label>ISBN</label>
+                                <input type="number" id="isbn" name="isbn" value="9788467029284" readonly>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <label>Editorial</label>
+                                <span>S.L.U. ESPASA LIBROS</span>
+                            </article>
+                            <article>
+                                <label>Año</label>
+                                <span>2020</span>
+                            </article>
+                        </section>
+                    </section>
+                    <section>
+                        <article>
+                            <p>Fortunata y Jacinta está considerada la narración más importante en lengua española después del Quijote.
+                                Ninguna obra española de los siglos XIX y XX refleja mejor que ésta el momento en que la burguesía asumía el control político y social de la nación, al tiempo que Madrid, protagonista indiscutible, adquiría el perfil de una urbe moderna. Benito Pérez Galdós recoge aquí el palpitar de una época, dando lugar a una de las novelas más conmovedoras de la historia de la Literatura española.</p>
+                        </article>
+                        <article>
+                            <label>Precio</label>
+                            <span>24,70€</span>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <label>Nombre y apellidos</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </article>
+                        <article>
+                            <label>Dirección de envío</label>
+                            <textarea name="envio"></textarea>
+                        </article>
+                        <article>
+                            <label>Email</label>
+                            <input type="email" id="email" name="email">
+                        </article>
+                        <article>
+                            <label>Número de tarjeta</label>
+                            <input type="number" id="tarjeta" name="tarjeta">
+                        </article>
+                        <section>
+                            <article>
+                                <label>Fecha de caducidad</label>
+                                <input type="date" id="fecha_caducidad" name="fecha_caducidad">
+                            </article>
+                            <article>
+                                <label>CVC</label>
+                                <input type="number" id="cvc" name="cvc">
+                            </article>
+                        </section>
+                        <article>
+                            <label>Marque si procede</label>
+                            <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
+                            <label>He leido y acepto las condiciones de compra</label><br>
+                            <input type="checkbox" id="opcion2" name="opcion2" value="opcion2">
+                            <label>Deseo recibir información sobre novedades</label><br>
+                            <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
+                            <label>Deseo el envío envuelto para regalo</label><br><br>
+                        </article>
+                    </section>
+                    <article>
+                    	<input type="submit" value="Hacer pedido">
+                    </article>
+                </form>
+            </section>
+            <section>
+                <section>
+                    <h5>Más vendidos</h5>
+                    <article>
+                        <a href="#"><h6>El quijote</h6></a>
+                    </article>
+                    <article>
+                        <a href="#"><h6>Ulises</h6></a>
+                    </article>
+                    <article>
+                        <a href="#"><h6>Arguiñano cocina</h6></a>
+                    </article>
+                </section>
+                <section>
+                    <h5>Más populares</h5>
+                    <article>
+                        <a href="#"><h6>Charles Dickens</h6></a>
+                    </article>
+                    <article>
+                        <a href="#"><h6>Julio Verne</h6></a>
+                    </article>
+                    <article>
+                        <a href="#"><h6>Edgar Allan</h6></a>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <section>
+                    <h5>Granada</h5>
+                    <article>
+                        <a href="#"><h6>Reyes Católicos (958 00 00 00)</h6></a>
+                    </article>
+                    <article>
+                        <a href="#"><h6>Avda. Dilar (958 00 00 00)</h6></a>
+                    </article>
+                </section>
+                <section>
+                    <h5>Málaga</h5>
+                    <article>
+                        <a href="#"><h6>Marqués de Larios (951 00 00 00)</h6></a>
+                    </article>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <img src="img/email.jpg" alt="QUE LIBROS!" width="20em">
+                    <a href="mailto:lectordelibros@gmail.com" target="_top">lectordelibros@gmail.com</a>
+                </section>
+                <section>
+                    <article>
+                        <a href="#" title="Twitter">
+                            <img src="img/twitter.png" alt="Twitter" width="20em">
+                       </a>
+                    </article>
+                    <article>
+                        <a href="#" title="Facebook">
+                            <img src="img/facebook.png" alt="Facebook" width="20em">
+                       </a>
+                    </article>
+                    <article>
+                        <a href="#" title="Pinterest">
+                            <img src="img/pinterest.png" alt="Pinterest" width="20em">
+                       </a>
+                    </article>
+                    <article>
+                        <a href="#" title="RSS">
+                            <img src="img/rss.png" alt="Rss" width="20em">
+                       </a>
+                    </article>
+                </section>
+            </section>
+            <section>
+                <a href="#">La empresa</a>
+                <a href="#">Política de envío</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Mapa del sitio</a>
+            </section>
+        </footer>
+    </body>
+</html>

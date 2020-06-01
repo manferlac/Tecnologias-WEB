@@ -1,0 +1,519 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    background-color: #d4ea6b;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabecera h1{
+    font-size: 2.5em;
+    width: 60%;
+}
+
+#cabecera a{
+    text-align: center;
+    width: 40%;
+}
+
+#logotipo {
+    max-width: 50%;
+}
+
+.menu {
+    background-color: #e8f2a1;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cont-lateral {
+    background-color: #fff5ce;
+    border: 1px solid #c5e655;
+    padding: 5px;
+}
+
+.titulo-cont-lateral {
+    background-color: #ffde59;
+    padding: 5px;
+}
+
+.container-principal {
+    background-color: #f6f9d4;
+    border: 1px solid #c5e655;
+    margin-right: .5em;
+}
+
+#nombre-valoracion-receta{
+    background-color: #d4ea6b;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px 0 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+#valoracion-receta {
+    background-color: white;
+}
+
+#tags-autor {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    padding: 0 15px 0 15px;
+}
+
+.section-enlaces ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.section-enlaces a{
+    text-decoration: none;
+    color: black;
+}
+
+#descripcion {
+    display: flex;
+    background-color: #e8f2a1;
+    margin: 15px;
+}
+
+#container-imagen-principal{
+    width: 30%;
+    margin: 5px;
+}
+
+#container-imagen-principal img{
+    width: 100%;
+}
+
+
+#texto-descripcion {
+    width: 70%;
+    padding: 10px;
+    font-size: larger;
+}
+
+/* #receta {
+    display: flex;
+} */
+
+#pasos-receta {
+    margin: 0 2.5em 0 2.5em;
+}
+
+#pasos-receta li{
+    margin: .9em 0 0.9em 0;
+}
+
+#ingredientes-receta {
+    background-color: #dee7e5;
+    float: right;
+    margin: 15px;
+}
+
+#ingredientes-receta ul{
+    padding: 15px;
+}
+
+#ingredientes-receta li{
+    list-style-type: none;
+
+}
+
+#imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.comentario {
+    background-color: #ffdbb6;
+    padding: 5px;
+    margin: 5px;
+    font-size: smaller;
+}
+
+.datos-comentario {
+    color: #bf3d85;
+    
+}
+
+#barra-edicion {
+    background-color: #d4ea6b;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: flex-end;
+}
+
+footer {
+    background-color: #e8f2a1;
+    display: flex;
+    font-size: smaller;
+    padding: 10px;
+}
+
+#login section{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#login section input{
+    width: 80px;
+    height: 20px;
+}
+
+#login section label{
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+    font-size: small;
+}
+
+#login input[type=submit]{
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    background-color: gainsboro;
+    height: 25px;
+    
+}
+
+.mejor-valorada {
+    display: flex;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.mejor-valorada *{
+    margin-right: 3px;
+    padding-top: 5px;
+}
+
+#numero-recetas {
+    padding: 5px;
+    font-size: smaller;
+}
+
+#imagenes article{
+    max-width: 15%;
+    padding: 10px;
+}
+
+.imagen-receta {
+    width: 100%;
+}
+
+.enlaces-footer li{
+    margin-left: 15px;
+}
+
+.clasificacion{
+    direction: rtl; /* La propiedad direction: rtl; cambia la dirección de escritura  de derecha a izquierda */
+    unicode-bidi: bidi-override; /* unicode-bidi ( bidi de bidireccional ) se utiliza junto con la propiedad direction para cambiar  la dirección del texto */
+}
+
+.clasificacion label{
+    color: #cdcdcd;
+    font-size: xx-large;
+}
+
+.clasificacion label:hover{
+    color:orange;
+}
+
+.clasificacion label:hover ~ label{
+    color:orange;
+}
+
+.clasificacion input[type="radio"]{
+     display:none;
+}
+
+.clasificacion input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+.numeracion {
+    background: #ffd428;
+    border-radius: 3em;
+    color: black;
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    text-decoration: none; 
+}
+
+#edicion{
+    margin-left: 25px;
+}
+
+#cancelar {
+    background: black;
+    border-radius: 3em;
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    text-decoration: none;
+    max-width: 3em;
+    max-height: 3em;
+}
+
+#editar, #comentario{
+    background: #f2b014;
+    border-radius: 3em;
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    text-decoration: none;
+    max-width: 3em;
+    max-height: 3em;
+}
+
+#edicion a img{
+    max-width: 100%;
+}
+
+.tags ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.tags a{
+    text-decoration: none;
+    color: black;
+}
+
+#mostrar-pasos {
+    display: none;
+}
+
+/* VERSIÓN ADAPTABLE MAX-WIDTH 799px */
+
+@media all and (max-width: 799px){
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container{
+        display: block;
+    }
+
+    #cabecera{
+        padding: 5px;
+    }
+
+    #cabecera h1{
+        font-size: 1.5em;
+    }
+
+    #logotipo{
+        object-fit: cover;
+        width: 10vw;
+        height: 65px;
+    }
+
+    #login{
+        text-align: center;
+    }
+
+    #login section{
+        display: inline-flex;
+    }
+
+    .valoraciones-recetas{
+        display: none;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .enlaces-footer li{
+        margin: 0 auto;
+    }
+
+    .section-enlaces ul{
+        display: block;
+    }
+
+    .tags ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    .tags a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #valoracion-receta {
+        display: none;
+    }
+
+    #tags-autor{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        position: relative;
+        height: 0;
+    }
+
+    #nombre-valoracion-receta {
+        padding: 10px;
+    }
+
+    #descripcion {
+        margin: 5px;
+    }
+
+    #texto-descripcion {
+        font-size: large;
+    }
+
+    #receta {
+        flex-direction: column-reverse;
+    }
+
+    #ingredientes-receta {
+        width: 100%;
+        margin: auto;
+        column-count: 2;
+        margin-bottom: 15px;
+    }
+
+    .titulo-cont-lateral{
+        display: none;
+    }
+
+    .container-principal {
+        margin: auto;
+    }
+
+    .cont-lateral {
+        margin-bottom: 5px;
+    }
+
+    #mostrar-pasos {
+        display: block;
+        text-align: center;
+    }
+
+    .no-mostrar {
+        display: none;
+    }
+
+    #imagenes article{
+        max-width: 30%;
+    }
+
+    #comentarios-barra{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #imagenes {
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 601px){
+    #imagenes article{
+        max-width: 28%;
+    }
+
+    #logotipo{
+        width: auto;
+    }
+
+    .menu a{
+        font-size: small;
+    }
+}
+
+@media all and (max-width: 500px){
+    #nombre-valoracion-receta h3{
+        font-size: medium;
+    }
+
+    #cabecera h1{
+        font-size: 1.0em;
+    }
+}
+
+@media all and (max-width: 450px){
+    #texto-descripcion{
+        font-size: smaller;
+    }
+
+    .numeracion, #editar, #comentario, #cancelar{
+        line-height: 2.0em;
+        width: 2.0em;
+        max-width: 2.0em;
+        max-height: 2.0em;
+    }
+
+    #tags-autor{
+        font-size: small;
+    }
+}
+
+@media all and (max-width: 375px){
+    #cabecera h1{
+        font-size: 0.8em;
+    }
+
+    .menu a{
+        font-size: 0.7em;
+    }
+
+    #login section input{
+        width: 60px;
+    }
+
+    #nombre-valoracion-receta h3, #ingredientes-receta li, #pasos-receta li, #mostrar-pasos{
+        font-size: small;
+    }
+
+    #imagenes article{
+        max-width: 25%;
+    }
+}
